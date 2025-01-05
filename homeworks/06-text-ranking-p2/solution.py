@@ -19,7 +19,7 @@ from pandarallel import pandarallel
 import optuna
 from statistics import mean
 
-pandarallel.initialize(progress_bar=True)
+pandarallel.initialize(progress_bar=True, use_memory_fs=False)
 
 """
 Параметры были выучены с помощью библиотеки optuna (изначально PARAMS был пустым)
